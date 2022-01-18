@@ -7,7 +7,7 @@ npm install
 
 ### Compiles and hot-reloads for development
 ```
-sass scss/bcs.scss dist/scss/bcs.css
+sass scss/bcs.scss dist/css/bcs.css
 
 ```
 
