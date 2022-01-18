@@ -1,7 +1,6 @@
 {
-  "name": "bcs-sass",
-  "version": "0.1.0",
-  "private": true,
+  "name": "corpjorge-bcs-sass",
+  "version": "0.1.0", 
   "dependencies": {
     "bootstrap": "^5.1.3",
     "sass": "^1.48.0"
