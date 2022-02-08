@@ -1,65 +1,51 @@
 <!DOCTYPE html>
 <html lang="">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>BCS Sass</title>
-  </head>
-  <body>
-    <div class="text-center mt-5 fade-in" style="margin-top: 60px">
+    <link rel="stylesheet" href="../dist/css/bcs.css"/>
+    <title>BCS UI</title>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="login text-center mt-5 fade-in" style="margin-top: 60px" id="login">
         <main class="form-signin">
-          <form autocomplete="off" @submit.prevent="login">
-            <img
-              id="logo"
-              class="mb-4"
-              src="../assets/img/logo_b.png"
-              alt=""
-              style="width: 90%; margin-bottom: 15px"
-            />
-            <div class="form-floating my-2" style="margin-bottom: 7px">
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Seleccionar</option>
-                <option value="1">Cedula de ciudadanía</option>
-                <option value="2">Cedula de extranjería</option>
-                <option value="3">Número de identificación tributaria</option>
-                <option value="3">Tarjeta de identidad</option>
-                <option value="3">Permisos especial de permanencia</option>
-                <option value="3">Usuario</option>
-              </select>
-              <label for="floatingInput">Tipo de identificación</label>
-            </div>
-            <div class="form-floating my-2" style="margin-bottom: 7px">
-              <input
-                type="text"
-                class="form-control rounded shadow"
-                id="floatingInput"
-                placeholder="Cedula"
-                v-model="user.document"
-              />
-              <label for="floatingInput">Numero de identificación</label>
-            </div>
-            <div class="form-floating">
-              <input
-                type="password"
-                class="form-control rounded shadow"
-                id="floatingPassword"
-                placeholder="Contraseña"
-                v-model="user.password"
-              />
-              <label for="floatingPassword">Contraseña</label>
-            </div>
-    
-            <button
-              class="w-100 btn btn-lg btn-primary rounded-pill shadow"
-              type="submit"
-            >
-              Iniciar sesión
-            </button>
-            <p class="mt-5 mb-3 text-white">&copy; 2022</p>
-          </form>
+            <form autocomplete="off">
+                <img id="logo" class="mb-4" src="../assets/img/logo_b.png" alt=""
+                     style="width: 90%; margin-bottom: 15px"/>
+                <div class="form-floating my-2" style="margin-bottom: 7px">
+                    <select id="selectLogin" class="form-select" aria-label="Default select example">
+                        <option selected>Seleccionar</option>
+                        <option value="1">Cedula de ciudadanía</option>
+                        <option value="2">Cedula de extranjería</option>
+                        <option value="3">Número de identificación tributaria</option>
+                        <option value="3">Tarjeta de identidad</option>
+                        <option value="3">Permisos especial de permanencia</option>
+                        <option value="3">Usuario</option>
+                    </select>
+                    <label for="selectLogin">Tipo de identificación</label>
+                </div>
+                <div class="form-floating my-2" style="margin-bottom: 7px">
+                    <input type="text" class="form-control rounded shadow" id="document" placeholder="Cedula"/>
+                    <label for="document">Numero de identificación</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control rounded shadow" id="floatingPassword"
+                           placeholder="Contraseña"/>
+                    <label for="floatingPassword">Contraseña</label>
+                </div>
+                <button class="w-100 btn btn-lg btn-primary rounded-pill shadow" type="submit">
+                    Iniciar sesión
+                </button>
+                <p class="mt-5 mb-3 text-white">&copy; 2022</p>
+            </form>
         </main>
-      </div>   
-  </body>
+    </div>
+</div>
+
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../dist/js/bcs.js"></script>
+</body>
 </html>
