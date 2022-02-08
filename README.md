@@ -17,7 +17,7 @@ inconvenience
 
 ## Demo
 
-- see [Demo](https://corpjorge.com/demo)
+- see [Demo](https://bcs.com/demo)
 
 ## Quick start
 
@@ -25,7 +25,7 @@ inconvenience
 - `yarn add corpjorge-bcs-sass`
 - Clone the repo: `git clone https://github.com/corpjorge/corpjorge-bcs-sass.git`.
 - [Download from Github](https://github.com/corpjorge/bcs-sass/archive/master.zip).
-- [Download from Site](https://bcs-sass.corpjorge.com).
+- [Download from Site](https://bcs-sass.bcs.com).
 
 ## Dark Mode
 
