@@ -5,15 +5,7 @@
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
     user-select: none;
-}
-
-@media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-    }
 }
 
 .form-signin {
@@ -43,7 +35,8 @@
     border-top-right-radius: 0;
 }
 
-.fade-in {
-    -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-    animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
 }
