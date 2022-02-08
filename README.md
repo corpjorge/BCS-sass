@@ -34,7 +34,7 @@ inconvenience
 
 ## Responsive design
 
-![Image](assets/img/screenshot_2.jpg)
+![Image](assets/img/screenshot_1.jpg )
 
 ## Licensing
 
