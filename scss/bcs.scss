@@ -1,17 +1,25 @@
-// Bootstrap Functions
-@import "bcs/bootstrap/functions";
-
-// Custom Variables
-@import "bcs/custom/variables";
+/*
+ * Bootlight UI v0.1.0
+ * Repo Page: https://github.com/corpjorge/bcs
+ * Copyright 2022 Banco Caja Social (https://www.bancocajasocial.com)
+ * Coded by BCS team Innovación
+ */
 
 // Theme Variables
 @import "bcs/variables";
 
 // Bootstrap Core
-@import "bcs/bootstrap/bootstrap";
+@import "bcs/bootstrap";
 
 // Theme Core
 @import "bcs/theme";
 
-// Custom Variables
-@import "bcs/custom/styles";
+// Layout & components
+@import "bcs/card";
+@import "bcs/sidebar/sidebar";
+@import "bcs/animations/fade-in-top";
+@import "bcs/animations/scale-in-ver-top";
+@import "bcs/navbar";
+@import "bcs/form/form-signin";
+@import "bcs/dark";
+@import "bcs/modal";
