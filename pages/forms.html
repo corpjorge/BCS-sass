@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="stylesheet" href="../dist/css/bcs.css"/>
+    <title>BCS UI</title>
+</head>
+<body>
+
+<header class="navbar sticky-top bg-white flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">
+        <img src="../assets/img/logo_b.png" style="width: 154px;">
+    </a>
+    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+            aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
+    </button>
+    <div class="w-100"></div>
+    <div class="navbar-nav">
+        <div class="nav-item text-nowrap">
+            <a class="nav-link text-black px-3" href="#">Sign out</a>
+        </div>
+    </div>
+</header>
+
+<div class="container-fluid">
+    <div class="row">
+        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-primary sidebar collapse">
+            <div class="position-sticky pt-3">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="buttons.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                 stroke-linejoin="round" class="feather feather-home" aria-hidden="true">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg>
+                            Buttons
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tables.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                 stroke-linejoin="round" class="feather feather-file" aria-hidden="true">
+                                <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+                                <polyline points="13 2 13 9 20 9"></polyline>
+                            </svg>
+                            Tables
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="forms.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                 stroke-linejoin="round" class="feather feather-shopping-cart" aria-hidden="true">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                            Forms
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+
+            <!-- content-->
+            <div class="col-lg-6">
+                <div class="card shadow-lg rounded">
+                    <div class="card-body my-2">
+                        <main class="flex-shrink-0">
+                            <div class="container-fluid">
+                                <h4>Stacked Form</h4>
+                                <hr/>
+                                <form autocomplete="off">
+                                    <div class="row g-3">
+                                        <div class="col-sm-6">
+                                            <label for="name" class="form-label">Name</label>
+                                            <input type="text" class="form-control" id="name"
+                                                   placeholder="name"
+                                                   required>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label for="password" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="password"
+                                                   placeholder="password"
+                                                   required/>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label for="db" class="form-label">Database</label>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text">users_</span>
+                                                <input type="text" class="form-control" id="db" placeholder="prefix"
+                                                       aria-label="Prefix"
+                                                       aria-describedby="basic-addon1"
+                                                       required/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-4"></div>
+                                    <div class="progress mb-2" style="height: 1px;">
+                                        <div class="progress-bar bg-success"
+                                             role="progressbar"
+                                             aria-valuenow="25"
+                                             aria-valuemin="0"
+                                             aria-valuemax="100"
+                                             style="width: 30%"
+                                        >
+                                        </div>
+                                    </div>
+                                    <div class="d-grid mx-auto">
+                                        <button class="btn btn-info text-white my-2 px-4" type="submit">save changes
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="card shadow-lg rounded">
+                    <div class="card-body my-2">
+                        <main class="flex-shrink-0">
+                            <div class="container-fluid">
+                                <h4>Readonly plain text</h4>
+                                <hr/>
+                                <form class="row g-3">
+                                    <div class="col-auto">
+                                        <label for="staticEmail2" class="visually-hidden">Email</label>
+                                        <input type="text" readonly class="form-control-plaintext" id="staticEmail2"
+                                               value="email@example.com">
+                                    </div>
+                                    <div class="col-auto">
+                                        <label for="inputPassword2" class="visually-hidden">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword2"
+                                               placeholder="Password">
+                                    </div>
+                                    <div class="col-auto">
+                                        <button type="submit" class="btn btn-primary mb-3 px-4 text-white">Confirm identity
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="card shadow-lg rounded">
+                    <div class="card-body my-2">
+                        <main class="flex-shrink-0">
+                            <div class="container-fluid">
+                                <h4>Progress bar</h4>
+                                <div class="progress mb-2" style="height: 1px;">
+                                    <div class="progress-bar bg-success"
+                                         role="progressbar"
+                                         aria-valuenow="25"
+                                         aria-valuemin="0"
+                                         aria-valuemax="100"
+                                         style="width: 80%"
+                                    >
+                                    </div>
+                                </div>
+                                <div style="padding: 15px"></div>
+                                <div class="progress mb-2" style="height: 1px;">
+                                    <div class="progress-bar bg-dark"
+                                         role="progressbar"
+                                         aria-valuenow="25"
+                                         aria-valuemin="0"
+                                         aria-valuemax="100"
+                                         style="width: 60%"
+                                    >
+                                    </div>
+                                </div>
+                                <div style="padding: 15px"></div>
+                                <div class="progress mb-2" style="height: 1px;">
+                                    <div class="progress-bar bg-secondary progress-bar-striped progress-bar-animated"
+                                         role="progressbar"
+                                         aria-valuenow="25"
+                                         aria-valuemin="0"
+                                         aria-valuemax="100"
+                                         style="width: 40%"
+                                    >
+                                    </div>
+                                </div>
+
+                                <div style="padding: 15px"></div>
+                                <div class="progress mb-2" style="height: 4px;">
+                                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated"
+                                         role="progressbar"
+                                         aria-valuenow="25"
+                                         aria-valuemin="0"
+                                         aria-valuemax="100"
+                                         style="width: 55%"
+                                    >
+                                    </div>
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+</div>
+
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../dist/js/bcs.js"></script>
+</body>
+</html>
