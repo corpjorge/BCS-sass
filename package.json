@@ -1,6 +1,6 @@
 {
   "name": "corpjorge-bcs-sass",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "BCS UI for developing responsive, mobile first projects on the web.",
   "style": "dist/css/bcs.css",
   "browser": "dist/js/bcs.js",
